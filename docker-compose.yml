@@ -4,8 +4,6 @@ services:
     image: cuneyta/rabbitmq:1.2
     hostname: rabbitmq-01
     environment:
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=Passw0rd
       - RABBITMQ_ERLANG_COOKIE="MY-SECRET-KEY-123"
     networks:
       - prod
@@ -19,8 +17,6 @@ services:
     image: cuneyta/rabbitmq:1.2
     hostname: rabbitmq-02
     environment:
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=Passw0rd
       - RABBITMQ_ERLANG_COOKIE="MY-SECRET-KEY-123"
     networks:
       - prod
@@ -34,8 +30,6 @@ services:
     image: cuneyta/rabbitmq:1.2
     hostname: rabbitmq-03
     environment:
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=Passw0rd
       - RABBITMQ_ERLANG_COOKIE="MY-SECRET-KEY-123"
     networks:
       - prod
