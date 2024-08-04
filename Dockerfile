@@ -1,3 +1,5 @@
 ﻿FROM rabbitmq:3.7.8-management
-ADD config/ /etc/rabbitmq/
-ADD certs/ /etc/rabbitmq/
+
+COPY config/enabled_plugins /etc/rabbitmq/enabled_plugins
+COPY config/rabbitmq.conf /etc/rabbitmq/rabbitmq.conf
+COPY certs /etc/certs
