@@ -2,12 +2,5 @@
 rabbitmq_federation,
 rabbitmq_shovel,
 rabbitmq_management,
-rabbitmq_management_agent,
 rabbitmq_federation_management,
-rabbitmq_shovel_management,
-rabbitmq_web_dispatch,
-rabbitmq_top,
-rabbitmq_stomp,
-rabbitmq_mqtt,
-rabbitmq_web_stomp,
-rabbitmq_web_mqtt].
+rabbitmq_shovel_management].
