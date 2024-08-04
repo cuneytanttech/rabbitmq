@@ -1,7 +1,7 @@
 version: "3.6"
 services:
   rabbitmq-01:
-    image: cuneyta/rabbitmq:1.1
+    image: cuneyta/rabbitmq:1.2
     hostname: rabbitmq-01
     environment:
       - RABBITMQ_DEFAULT_USER=admin
@@ -16,7 +16,7 @@ services:
       placement:
         constraints: [node.labels.rabbitmq1 == true]
   rabbitmq-02:
-    image: cuneyta/rabbitmq:1.1
+    image: cuneyta/rabbitmq:1.2
     hostname: rabbitmq-02
     environment:
       - RABBITMQ_DEFAULT_USER=admin
@@ -31,7 +31,7 @@ services:
       placement:
         constraints: [node.labels.rabbitmq2 == true]
   rabbitmq-03:
-    image: cuneyta/rabbitmq:1.1
+    image: cuneyta/rabbitmq:1.2
     hostname: rabbitmq-03
     environment:
       - RABBITMQ_DEFAULT_USER=admin
